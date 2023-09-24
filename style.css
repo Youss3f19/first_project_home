@@ -2,13 +2,9 @@
 body{
     display:block ;
     place-items: center;
-    background-image: url(https://wallpapers.com/images/hd/4k-white-abstract-waves-i308ljad82204626.jpg);
-    place-items: center;
- 
+    background-image: url(https://wallpapers.com/images/hd/4k-white-abstract-waves-i308ljad82204626.jpg); 
 }
-html{
-    scroll-behavior: smooth;
-}
+
 /* Navbar */
 #navtitle{
     font-family: 'Montserrat',;
@@ -131,7 +127,7 @@ nav.black{
     display: flex;
     justify-content: center;
     background-position: center;
-    transform: scale(1.5);
+    
     
 
 }
@@ -159,7 +155,7 @@ p,h5{
 .single{
     padding: 0 4rem;
     display: grid;
-    width: 600px;
+    width: 400px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
