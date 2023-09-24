@@ -12,9 +12,9 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/31625fef3f.js" crossorigin="anonymous"></script>
   </head>
-<body>
-
+<body id="ct">
      <!--Navbar w login-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary" style="display: inline-block; position: sticky;">
         <div class="container-fluid">
@@ -25,15 +25,15 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active textnav" aria-current="page" href="#">Home</a>
-              <a class="nav-link textnav" href="#">About us </a>
+              <a class="nav-link textnav" href="#as">About us </a>
               <a class="nav-link textnav" href="#">Q&A</a>
               <a class="nav-link textnav" href="#">FeedBack</a>
             </div>
           </div>
           <button type="button" class="btn btn-primary">Primary</button>
 
-          <button class="logsig" id="log">Login</button>
-          <button class="logsig" id="sig">Sign in</button>
+          <a href="file:///C:/Users/SBS/OneDrive/Bureau/club/first%20project/test.html#"><button class="logsig" id="log" onclick="addlog()">Login</button></a>
+          <a href="file:///C:/Users/SBS/OneDrive/Bureau/club/first%20project/test.html#"><button class="logsig" id="sig" onclick="addsig()">Sign in</button></a>
         </div>
         </nav>
        
@@ -41,6 +41,7 @@
       
 
     </div>
+
     <!--tsawer taa about us (slider)-->
     <div id="carouselExampleIndicators" class="carousel slide">
       
@@ -49,7 +50,7 @@
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="fles"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="fles"></button>
       </div>
-      <div class="carousel-inner">
+      <div class="carousel-inner" data-ride="caraousel">
         <div class="carousel-item active">
           <img src="https://static.vecteezy.com/ti/photos-gratuite/p2/8571422-femme-comptable-d-entreprise-utilisant-une-calculatrice-pour-faire-des-maths-finance-sur-un-bureau-en-bois-au-bureau-et-des-fonds-de-travail-en-comptabilite-fiscale-statistiques-et-concept-de-recherche-analytique-gratuit-photo.jpg" class="d-block w-100 imagescroll" alt="..." >
         </div>
@@ -71,7 +72,16 @@
     </div>
       </button>
     </div>
- 
+     <!--About us-->
+     <a name="as"></a>
+     <div class="as">
+      <h2 id="astitle">About Us</h2>
+      <p class="paragraph">
+      The About Us page of your website is an essential source of information for all who want to know more about your business.
+      About Us pages are where you showcase your history, what is unique about your work, your company’s values, and who you serve.
+      The design, written content, and visual or video elements together tell an important story about who you are and why you do it. 
+    </p>
+    </div>
      <!-- dev wl management  -->
     <div class="container">
         <div class="single">
@@ -80,7 +90,7 @@
                 
                 <div class="card-group">
                     <div class="card">
-                      <img  src="https://cdn.freebiesupply.com/logos/large/2x/societe-generale-logo-png-transparent.png" class="card-img-top" alt="...">
+                      <img  src="https://images.unsplash.com/photo-1612810806546-ebbf22b53496?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">CompanyName</h5>
                         <p class="card-text">This is a wider card with supporting text below .</p>
@@ -88,7 +98,7 @@
                       </div>
                     </div>
                     <div class="card">
-                      <img src="https://cdn.freebiesupply.com/logos/large/2x/societe-generale-logo-png-transparent.png" class="card-img-top" alt="...">
+                      <img src="https://images.unsplash.com/photo-1612810806546-ebbf22b53496?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">CompanyName</h5>
                         <p class="card-text">This is a wider card with supporting text below . 
@@ -98,7 +108,7 @@
                       </div>
                     </div>
                     <div class="card">
-                      <img src="https://cdn.freebiesupply.com/logos/large/2x/societe-generale-logo-png-transparent.png" class="card-img-top" alt="...">
+                      <img src="https://images.unsplash.com/photo-1612810806546-ebbf22b53496?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">CompanyName</h5>
                         <p class="card-text">This is a wider card with supporting text below . 

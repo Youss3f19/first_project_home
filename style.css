@@ -3,8 +3,13 @@ body{
     display:block ;
     place-items: center;
     background-image: url(https://wallpapers.com/images/hd/4k-white-abstract-waves-i308ljad82204626.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     place-items: center;
  
+}
+html{
+    scroll-behavior: smooth;
 }
 /* Navbar */
 #navtitle{
@@ -30,7 +35,25 @@ nav.black{
 .navtit{
     color: #ffffff;
 }
+/*About Us*/
+.as{
+    width: 800px;
+    margin: 180px 180px 180px 150px;
+}
+#astitle{
+  font-size: 50px;  
+  font-family: 'Monterrat';
+}
+.paragraph{
+    text-align: left;
+    font-family: 'Monterrat';
+}
 /* Login Sign in */
+body.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
 .logsig{    
   width: 100px;
   height: 50px;
@@ -46,7 +69,6 @@ nav.black{
     cursor: pointer;
     background: #ffffff;
     color: #000000;
-    
 }   
 #log:hover {
     background: #000000;
@@ -59,7 +81,7 @@ nav.black{
     transition: all 0.3s;
     cursor: pointer;
     background: #994ff3;
-    color: #ffffff;
+    color: white;
 
 }
 #sig:hover {
@@ -81,9 +103,9 @@ nav.black{
     color: #994ff3;
 }
 /* Aka Image Scroller */
-#carouselExampleFade{
+#carouselExampleIndicators{
     margin-left: 120px;
-    margin-bottom: 180px;
+    margin-bottom: 0px;
     width: 87.5%;
     height: 500px;
 
@@ -92,25 +114,38 @@ nav.black{
     width:87.5%;
     height: 500px;
 }
+.repar{
+    background-color: #ffffff00;
+    border: 0;
+}
+.fles{
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 360px;
+    border: 0;
+    background-color: #41424634;
+}
 /* dev management */
 .card-img-top{
     width: 500px;
     height: 120px;
 }
 .container{
-    width: 87.5%;
+    width: 800px;
     height: 500px;
     display: flex;
     justify-content: center;
     background-position: center;
     transform: scale(1.5);
-    
-
 }
 .containt{
     transform: rotate(-90deg);
     transition: 500ms ease-in-out transform;
 
+}
+.card-title{
+    font-size: 15px;
 }
 p,h5{
     color: black;
@@ -131,7 +166,7 @@ p,h5{
 .single{
     padding: 0 4rem;
     display: grid;
-    width: 600px;
+    width: 87.5%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -205,12 +240,10 @@ h1{
 .single:hover p{
     transform: scale(0deg);
 }
+/* Footer */
 footer{
     background-color: rgb(0, 0, 0);
-    padding: 10 px;
-    
 }
-/* Footer */
 #footext{
     color: aliceblue;
     text-align: center;
@@ -230,3 +263,129 @@ footer{
 .icon:hover{
     transform: scale(1.4);
 }
+/* log sig other page 
+.wrapper{
+    position: fixed;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 440px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 2px 3px 30px  rgba(0, 0, 0, 0.36);
+    display: flex;
+    justify-content: center;
+    margin-top: 13%;
+    margin-left: 40%;
+    scale: 1;
+    z-index: 9999;
+}
+#signlink{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.599);
+    font-family: 'Monterrat';
+    font-size: 18px;
+}
+
+#logintitle{
+    text-align: center;
+    font-family: 'Monterrat';
+}
+.formlogin{
+    padding:40px ;
+    position: fixed;
+    translate: 0px;
+    scale: 1;
+    
+    
+    
+}
+.formsigin{
+    padding:40px ;
+    margin-left:800px;
+    translate: -400px;
+    scale: 0;
+
+}
+
+.boxinpt{
+    border-bottom: 2px black solid;
+    padding: 10px;
+    position: relative;
+}
+.inpt{
+    border: none;
+    background-color: transparent;
+    font-family: 'Monterrat';
+    outline: none;
+}
+.Remember{
+    font-family: 'Monterrat';
+    margin-right: 40px;
+    margin: 20px 20px 0 0px;
+    
+}
+#logbtn{
+    margin: 20px;
+    width: 300px;
+    height: 50px;
+    font-size: 1.2em;
+    font-weight: 550;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    border: 3px solid #000000;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: #000000;
+    color: white;
+}
+#logbtn:hover {
+    background: #ffffff;
+    color: #000000;
+    font-size:22px;
+    box-shadow: 3px 3px 3px #414246;
+  }
+.formlinks{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.599);
+    font-family: 'Monterrat';
+    font-size: 18px;
+    float: right;
+    margin: 20px 20px 0 0px;
+}
+#x{
+    background-color: #000000;
+    height: 50px;
+    width: 50px;
+    display:flex;
+    float: left;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 11px;
+    font-size: 2em;
+    color: #ffffff;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 0px 20px 0px 20px;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+#x:hover{
+    background-color: #ffffff00;
+    color: #000000;
+    border: #000000 2px solid;
+    
+}
+.fa-x:hover{
+    transform: rotate(-360deg);
+    scale: 0.7;
+   
+}
+.fa-x{
+    width: 50px;
+    transition: 500ms all;
+    
+}*/
