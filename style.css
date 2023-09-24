@@ -98,7 +98,7 @@ nav.black{
     height: 120px;
 }
 .container{
-    width: 2500px;
+    width: 87.5%;
     height: 500px;
     display: flex;
     justify-content: center;
