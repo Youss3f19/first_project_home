@@ -1,0 +1,2 @@
+1)The inset property sets the distance between an element and the parent element.
+
